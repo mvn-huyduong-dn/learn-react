@@ -1,38 +1,156 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 80px;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.header {
+	width: auto;
+	height: 4.875rem;
+	background-color: black;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.navbar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link {
+	display: flex;
+	width: auto;
+	align-items: center;
+}
+
+.nav-link ul {
+	color: #fff;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 0;
+}
+
+.nav-link li {
+	padding-right: 2rem;
+	font-size: 20px;
+}
+.nav-link a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.image {
+	width: 100%;
+	height: 180px;
+	position: relative;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image span {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 2.5rem;
+	transform: translateY(-50%);
+	font-size: 2.5rem;
+}
+
+.content {
+	width: auto;
+	height: auto;
+	padding: 0 2rem;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 50px;
+}
+
+.body {
+	width: auto;
+}
+
+.card-image img {
+	width: 100%;
+	height: 250px;
+}
+
+.body h1 {
+	margin-left: 2rem;
+}
+
+.card-content p {
+	word-break: break-all;
+}
+
+.card-content button {
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	height: 4rem;
+	background-color: #9aa1ae;
+	text-align: center;
+	margin-top: 50px;
+	vertical-align: middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.icon {
+	font-size: 30px;
+	margin-left: 1rem;
 }
