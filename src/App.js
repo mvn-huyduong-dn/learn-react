@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import img from "./images.jpeg";
 import "./App.css";
 import { Facebook, Twitter, Instagram } from "@mui/icons-material";
+import Card from "./components/Card";
 function App() {
 	return (
 		<div className="App">
@@ -36,18 +37,11 @@ function App() {
 				<h1>Product Latest</h1>
 				<div className="content">
 					{[1, 2, 3, 4].map((v, i) => (
-						<div className="card">
-							<div className="card-image">
-								<img src="/images.jpeg"></img>
-							</div>
-							<div className="card-content">
-								<h3>Product {v}</h3>
-								<p>
-									dksjfhslkjfahslkdjfhsldkjfhkjlsdafhskljdfhskljfhdkjhdkjfhslkdh
-								</p>
-								<button type="button">Add to card</button>
-							</div>
-						</div>
+						<Card
+							productName={`Product ${v}`}
+							content={`content card ${v}`}
+							id={`${v}`}
+						/>
 					))}
 				</div>
 			</div>
