@@ -3,7 +3,14 @@ import img from "./images.jpeg";
 import "./App.css";
 import { Facebook, Twitter, Instagram } from "@mui/icons-material";
 import Card from "./components/Card";
+import { useState } from "react";
+import UserMngmnt from "./components/UserMngmnt";
 function App() {
+	const [url, setUrl] = useState("home");
+	const checkUrl = () => {
+		if (url === "home") {
+		}
+	};
 	return (
 		<div className="App">
 			<header className="header">
@@ -35,15 +42,16 @@ function App() {
 					<span>Wellcome To React Learning</span>
 				</div>
 				<h1>Product Latest</h1>
-				<div className="content">
-					{[1, 2, 3, 4].map((v, i) => (
+				{/* <div className="content"> */}
+				{/* {[1, 2, 3, 4].map((v, i) => (
 						<Card
 							productName={`Product ${v}`}
 							content={`content card ${v}`}
 							id={`${v}`}
 						/>
-					))}
-				</div>
+					))} */}
+				<UserMngmnt />
+				{/* </div> */}
 			</div>
 			<footer>
 				<div>react training</div>

@@ -154,3 +154,28 @@ footer {
 	font-size: 30px;
 	margin-left: 1rem;
 }
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.body-content {
+	display: flex;
+	padding: 0 2rem;
+}
+
+.form-regis {
+	width: 30%;
+}
+
+.table {
+	width: 100%;
+	padding: 0 1.5rem;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
